@@ -27,6 +27,18 @@
   font-style: normal;
 }
 
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 35px; /* Smaller font size for mobile */
+    line-height: 1.5;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-top: -100px;
+
+    /* Adjust line-height for better readability on smaller screens */
+    /* Adjust margin for mobile */
+  }
+}
 textarea {
   width: 600px;
   height: 250px;
@@ -39,7 +51,12 @@ textarea {
   resize: none;
   margin-bottom: 30px;
 }
-
+@media (max-width: 500px) {
+  textarea {
+    width: 150px;
+    margin-left: -150px;
+  }
+}
 textarea:focus {
   outline: none;
   border: none;
